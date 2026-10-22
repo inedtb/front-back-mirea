@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+playwright-report/
+test-results/

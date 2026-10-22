@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Демонстрационные условия доставки, самовывоза и оформления заявки в магазине Форма."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>Доставка и оплата | Форма</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">
+      Продуманные вещи для вашего дома <span aria-hidden="true">·</span>
+      <a href="delivery.html">Доставка и самовывоз ↗</a>
+    </div>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="Форма, главная"
+          >форма<span class="logo__mark" aria-hidden="true">®</span></a
+        >
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#about">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="delivery.html"
+                aria-current="page"
+                >Доставка</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__request" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Доставка и оплата</li>
+          </ol>
+        </nav>
+        <div class="page-heading">
+          <p class="eyebrow">От выбора до вашего дома</p>
+          <h1>Всё на своих местах.</h1>
+          <p>Понятные условия, чтобы планировать было проще.</p>
+        </div>
+        <section class="delivery-grid" aria-labelledby="delivery-title">
+          <h2 class="visually-hidden" id="delivery-title">Способы получения</h2>
+          <article class="info-panel">
+            <span class="info-panel__number">01</span>
+            <h2>Доставка по Москве</h2>
+            <p>
+              В концепции магазина день и время доставки согласовываются после
+              заявки. Стоимость зависит от адреса и габаритов предмета.
+            </p>
+            <ul>
+              <li>Доставка до подъезда или с подъёмом</li>
+              <li>Уточнение доступа к лифту заранее</li>
+              <li>Осмотр упаковки при получении</li>
+            </ul>
+          </article>
+          <article class="info-panel">
+            <span class="info-panel__number">02</span>
+            <h2>Самовывоз</h2>
+            <p>
+              Предполагает согласование готовности заказа и времени визита. Для
+              крупного предмета понадобится подходящий транспорт.
+            </p>
+            <ul>
+              <li>По предварительной договорённости</li>
+              <li>Проверка комплектации на месте</li>
+              <li>Рекомендации по перевозке</li>
+            </ul>
+          </article>
+        </section>
+        <section
+          class="delivery-payment section"
+          aria-labelledby="payment-title"
+        >
+          <h2 id="payment-title">Сначала детали, потом решение</h2>
+          <p>
+            Заявка нужна для обсуждения выбора. В учебной версии нет оплаты,
+            реальной доставки или бронирования. Все товары, цены и условия
+            представлены как пример.
+          </p>
+          <a class="button" href="order.html">Перейти к заявке ↗</a>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo" href="index.html"
+              >форма<span class="logo__mark" aria-hidden="true">®</span></a
+            >
+            <p>Вещи, с которыми хорошо дома.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Каталог</a
+            ><a href="delivery.html">Доставка и оплата</a
+            ><a href="contacts.html">Контакты</a
+            ><a href="order.html">Оставить заявку</a>
+          </nav>
+          <div class="site-footer__contact">
+            <a href="mailto:hello@forma.example">hello@forma.example ↗</a
+            ><span>Демонстрационные контакты</span>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>© Форма, 2026 · Учебный интернет-магазин</p>
+          <p>Вознесенский Владимир · ЭФБО-13-25</p>
+          <a href="index.html#about">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <dialog class="modal" id="consultation" aria-labelledby="modal-title">
+      <div class="modal__header">
+        <span class="eyebrow">Поможем с выбором</span
+        ><button
+          class="modal__close"
+          type="button"
+          data-dialog-close
+          aria-label="Закрыть окно"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <h2 id="modal-title">Найдём вашу форму.</h2>
+      <p>
+        Расскажите о комнате, любимых материалах и бюджете. В форме заявки можно
+        выбрать предмет и задать вопрос.
+      </p>
+      <a class="button" href="order.html"
+        >Перейти к заявке <span aria-hidden="true">↗</span></a
+      >
+      <p class="modal__note">
+        Это учебный проект. Реальные заказы не принимаются.
+      </p>
+    </dialog>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

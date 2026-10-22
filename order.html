@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Учебная форма заявки: выберите мебель, укажите контакты и задайте вопрос."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>Заявка на подбор мебели | Форма</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">
+      Продуманные вещи для вашего дома <span aria-hidden="true">·</span>
+      <a href="delivery.html">Доставка и самовывоз ↗</a>
+    </div>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="Форма, главная"
+          >форма<span class="logo__mark" aria-hidden="true">®</span></a
+        >
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#about">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__request" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Оставить заявку</li>
+          </ol>
+        </nav>
+        <div class="page-heading">
+          <p class="eyebrow">Следующий шаг к уюту</p>
+          <h1>Давайте начнём с вас.</h1>
+          <p>Выберите предмет или расскажите, что ищете.</p>
+        </div>
+        <div class="order-layout">
+          <section aria-labelledby="form-title">
+            <h2 class="visually-hidden" id="form-title">Форма заявки</h2>
+            <form class="order-form" action="request-preview.html" method="get">
+              <p class="form-note" id="form-note">
+                Учебная форма. Используйте вымышленные данные. Заявка не
+                отправляется в магазин. Поля со звёздочкой обязательны.
+              </p>
+              <fieldset>
+                <legend>Как с вами связаться</legend>
+                <div class="form-grid">
+                  <div class="order-form__field">
+                    <label for="name"
+                      >Имя <span aria-hidden="true">*</span></label
+                    ><input
+                      id="name"
+                      name="name"
+                      type="text"
+                      autocomplete="given-name"
+                      placeholder="Как к вам обращаться"
+                      required
+                      minlength="2"
+                      maxlength="60"
+                    />
+                  </div>
+                  <div class="order-form__field">
+                    <label for="phone"
+                      >Телефон <span aria-hidden="true">*</span></label
+                    ><input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      placeholder="+7 (999) 123-45-67"
+                      required
+                      pattern="[+0-9\(\) .\-]{10,25}"
+                      maxlength="25"
+                      aria-describedby="phone-hint"
+                    /><small id="phone-hint"
+                      >От 10 до 25 символов: цифры, +, скобки, пробелы,
+                      дефисы.</small
+                    >
+                  </div>
+                  <div class="order-form__field order-form__field--full">
+                    <label for="email"
+                      >Электронная почта
+                      <span aria-hidden="true">*</span></label
+                    ><input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="name@example.com"
+                      required
+                      maxlength="120"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Что вам понравилось</legend>
+                <div class="order-form__field">
+                  <label for="product"
+                    >Предмет или тема заявки
+                    <span aria-hidden="true">*</span></label
+                  ><select id="product" name="product" required>
+                    <option value="">Выберите из коллекции</option>
+                    <option value="product">Кресло «Тихо» · 32 900 ₽</option>
+                    <option value="product-table">
+                      Столик «Круг» · 14 900 ₽
+                    </option>
+                    <option value="product-lamp">
+                      Лампа «Купол» · 8 900 ₽
+                    </option>
+                    <option value="product-chair">
+                      Стул «Линия» · 18 900 ₽
+                    </option>
+                    <option value="consultation">Нужна помощь с выбором</option>
+                  </select>
+                </div>
+                <div class="order-form__field">
+                  <label for="comment">Комментарий</label
+                  ><textarea
+                    id="comment"
+                    name="comment"
+                    rows="4"
+                    maxlength="1500"
+                    placeholder="Размеры комнаты, пожелания или ваш вопрос"
+                  ></textarea>
+                </div>
+              </fieldset>
+              <fieldset class="delivery-options">
+                <legend>Удобный способ получения</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="delivery"
+                    value="courier"
+                    checked
+                  />
+                  Доставка</label
+                ><label
+                  ><input type="radio" name="delivery" value="pickup" />
+                  Самовывоз</label
+                ><label
+                  ><input type="radio" name="delivery" value="later" /> Решу
+                  позже</label
+                >
+              </fieldset>
+              <label class="consent" for="consent"
+                ><input
+                  id="consent"
+                  name="consent"
+                  type="checkbox"
+                  value="yes"
+                  required
+                /><span
+                  >Согласен с
+                  <a href="privacy.html">условиями учебной формы</a> и
+                  обработкой введённых данных.
+                  <span aria-hidden="true">*</span></span
+                ></label
+              >
+              <div class="order-form__actions">
+                <button
+                  class="button"
+                  type="submit"
+                  aria-describedby="form-note"
+                >
+                  Проверить заявку <span aria-hidden="true">↗</span></button
+                ><span>Без оплаты и обязательств</span>
+              </div>
+            </form>
+          </section>
+          <aside class="order-aside">
+            <img
+              src="images/lounge.webp"
+              alt="Кресло «Тихо» в светлом интерьере"
+              width="600"
+              height="400"
+            />
+            <div class="order-aside__body">
+              <h2>Дом начинается<br />с одной вещи.</h2>
+              <p>
+                Не обязательно выбирать всё сразу. Начните с того, что вам
+                по-настоящему нравится.
+              </p>
+              <ol class="steps">
+                <li><span>01</span> Выберите предмет</li>
+                <li><span>02</span> Заполните форму</li>
+                <li><span>03</span> Проверьте результат</li>
+              </ol>
+              <a class="text-link" href="delivery.html">Условия доставки ↗</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo" href="index.html"
+              >форма<span class="logo__mark" aria-hidden="true">®</span></a
+            >
+            <p>Вещи, с которыми хорошо дома.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Каталог</a
+            ><a href="delivery.html">Доставка и оплата</a
+            ><a href="contacts.html">Контакты</a
+            ><a href="order.html">Оставить заявку</a>
+          </nav>
+          <div class="site-footer__contact">
+            <a href="mailto:hello@forma.example">hello@forma.example ↗</a
+            ><span>Демонстрационные контакты</span>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>© Форма, 2026 · Учебный интернет-магазин</p>
+          <p>Вознесенский Владимир · ЭФБО-13-25</p>
+          <a href="index.html#about">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <dialog class="modal" id="consultation" aria-labelledby="modal-title">
+      <div class="modal__header">
+        <span class="eyebrow">Поможем с выбором</span
+        ><button
+          class="modal__close"
+          type="button"
+          data-dialog-close
+          aria-label="Закрыть окно"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <h2 id="modal-title">Найдём вашу форму.</h2>
+      <p>
+        Расскажите о комнате, любимых материалах и бюджете. В форме заявки можно
+        выбрать предмет и задать вопрос.
+      </p>
+      <a class="button" href="order.html"
+        >Перейти к заявке <span aria-hidden="true">↗</span></a
+      >
+      <p class="modal__note">
+        Это учебный проект. Реальные заказы не принимаются.
+      </p>
+    </dialog>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

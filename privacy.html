@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Как работает демонстрационная форма учебного HTML/CSS-проекта Форма."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>Условия учебной формы | Форма</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">
+      Продуманные вещи для вашего дома <span aria-hidden="true">·</span>
+      <a href="delivery.html">Доставка и самовывоз ↗</a>
+    </div>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="Форма, главная"
+          >форма<span class="logo__mark" aria-hidden="true">®</span></a
+        >
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#about">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__request" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <div class="container prose">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Условия учебной формы</li>
+          </ol>
+        </nav>
+        <h1>О данных в форме</h1>
+        <p>
+          «Форма» создана для контрольной работы №1 по дисциплине «Фронтенд и
+          бэкенд разработка».
+        </p>
+        <h2>Используйте вымышленные данные</h2>
+        <p>
+          Форма демонстрирует HTML-поля и встроенную проверку браузера. После
+          нажатия «Проверить заявку» откроется страница результата. Заказ не
+          создаётся, письмо не отправляется, базы данных нет.
+        </p>
+        <h2>Что происходит при переходе</h2>
+        <p>
+          Форма использует метод GET. Значения полей попадают в адрес страницы
+          результата и могут остаться в истории браузера и журналах хостинга. Не
+          вводите реальные имя, телефон, почту или другие персональные данные.
+        </p>
+        <h2>Учебное согласие</h2>
+        <p>
+          Флажок согласия демонстрирует обязательный элемент формы. Он не
+          заменяет политику обработки персональных данных действующего магазина.
+        </p>
+        <a class="button" href="order.html">Вернуться к форме ↗</a>
+      </div>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo" href="index.html"
+              >форма<span class="logo__mark" aria-hidden="true">®</span></a
+            >
+            <p>Вещи, с которыми хорошо дома.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Каталог</a
+            ><a href="delivery.html">Доставка и оплата</a
+            ><a href="contacts.html">Контакты</a
+            ><a href="order.html">Оставить заявку</a>
+          </nav>
+          <div class="site-footer__contact">
+            <a href="mailto:hello@forma.example">hello@forma.example ↗</a
+            ><span>Демонстрационные контакты</span>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>© Форма, 2026 · Учебный интернет-магазин</p>
+          <p>Вознесенский Владимир · ЭФБО-13-25</p>
+          <a href="index.html#about">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <dialog class="modal" id="consultation" aria-labelledby="modal-title">
+      <div class="modal__header">
+        <span class="eyebrow">Поможем с выбором</span
+        ><button
+          class="modal__close"
+          type="button"
+          data-dialog-close
+          aria-label="Закрыть окно"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <h2 id="modal-title">Найдём вашу форму.</h2>
+      <p>
+        Расскажите о комнате, любимых материалах и бюджете. В форме заявки можно
+        выбрать предмет и задать вопрос.
+      </p>
+      <a class="button" href="order.html"
+        >Перейти к заявке <span aria-hidden="true">↗</span></a
+      >
+      <p class="modal__note">
+        Это учебный проект. Реальные заказы не принимаются.
+      </p>
+    </dialog>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
