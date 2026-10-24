@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Новая коллекция учебного магазина Форма: мебель, освещение и идеи для спокойного интерьера."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Мебель и свет для вашего дома | Форма · КР №2</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <!-- Сначала локальный Bootstrap, затем точечные фирменные стили. -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main"
+      >Перейти к содержимому</a
+    >
+    <header class="sticky-top bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html"
+            >форма<span class="brand-mark" aria-hidden="true">®</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-lg-3 py-3 py-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Коллекция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">О магазине</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary btn-sm px-4" href="order.html"
+              >Оставить заявку <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container py-4 py-lg-5" aria-labelledby="hero-title">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-5">
+            <div
+              class="hero-copy rounded-4 p-4 p-xl-5 h-100 d-flex flex-column justify-content-center"
+            >
+              <h1 class="display-3" id="hero-title">Мебель и свет</h1>
+              <p class="text-body-secondary mt-3 mb-4">
+                Кресла, стулья, столики и настольные лампы.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary px-4" href="catalog.html"
+                  >Открыть каталог ↗</a
+                ><a class="btn btn-link text-body px-0" href="#about"
+                  >О магазине</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <figure class="mb-0 h-100">
+              <img
+                src="images/lounge.webp"
+                alt="Оливковое кресло «Тихо» рядом с круглым дубовым столиком"
+                class="img-fluid hero-image rounded-4 w-100"
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+              />
+              <figcaption
+                class="d-flex justify-content-between align-items-center gap-3 pt-3 small"
+              >
+                <span
+                  >Кресло «Тихо»
+                  <span class="text-body-secondary ms-2">32 900 ₽</span></span
+                ><a href="product.html" class="link-primary">Подробнее ↗</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="container pb-5" aria-labelledby="benefits-title">
+        <h2 class="visually-hidden" id="benefits-title">
+          Что объединяет коллекцию
+        </h2>
+        <div class="row g-4 py-4 border-top border-bottom">
+          <div class="col-12 col-md-4">
+            <h3 class="h6">Лаконичный дизайн</h3>
+            <p class="small text-body-secondary mb-0">
+              Без лишних декоративных элементов.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="h6">Натуральные материалы</h3>
+            <p class="small text-body-secondary mb-0">
+              Дуб, текстиль и металл.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="h6">Единая коллекция</h3>
+            <p class="small text-body-secondary mb-0">
+              Мебель и свет в общей палитре.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container pb-5"
+        id="popular"
+        aria-labelledby="popular-title"
+      >
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4"
+        >
+          <div>
+            <h2 class="display-6 mb-0" id="popular-title">Популярные товары</h2>
+          </div>
+          <a class="btn btn-outline-primary" href="catalog.html"
+            >Все предметы ↗</a
+          >
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100 product-card">
+              <a
+                href="product.html"
+                class="product-image-link"
+                tabindex="-1"
+                aria-hidden="true"
+                ><img
+                  src="images/lounge.webp"
+                  class="img-fluid card-img-top product-image"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+              /></a>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                  <span class="small text-body-secondary">Кресла</span
+                  ><span class="badge text-bg-light border">Выбор Форма</span>
+                </div>
+                <h3 class="card-title h5">
+                  <a href="product.html" class="text-decoration-none"
+                    >Кресло «Тихо»</a
+                  >
+                </h3>
+                <p class="card-text small text-body-secondary">
+                  Букле и массив дуба
+                </p>
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-3"
+                >
+                  <span class="fw-semibold">32 900 ₽</span
+                  ><a
+                    href="product.html"
+                    class="btn btn-outline-primary btn-sm"
+                    aria-label="Подробнее: Кресло «Тихо»"
+                    >Подробнее ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100 product-card">
+              <a
+                href="product-table.html"
+                class="product-image-link"
+                tabindex="-1"
+                aria-hidden="true"
+                ><img
+                  src="images/table.webp"
+                  class="img-fluid card-img-top product-image"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+              /></a>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                  <span class="small text-body-secondary">Столики</span
+                  ><span class="badge text-bg-light border"
+                    >Натуральное дерево</span
+                  >
+                </div>
+                <h3 class="card-title h5">
+                  <a href="product-table.html" class="text-decoration-none"
+                    >Столик «Круг»</a
+                  >
+                </h3>
+                <p class="card-text small text-body-secondary">
+                  Массив дуба, матовое масло
+                </p>
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-3"
+                >
+                  <span class="fw-semibold">14 900 ₽</span
+                  ><a
+                    href="product-table.html"
+                    class="btn btn-outline-primary btn-sm"
+                    aria-label="Подробнее: Столик «Круг»"
+                    >Подробнее ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100 product-card">
+              <a
+                href="product-lamp.html"
+                class="product-image-link"
+                tabindex="-1"
+                aria-hidden="true"
+                ><img
+                  src="images/lamp.webp"
+                  class="img-fluid card-img-top product-image"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+              /></a>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                  <span class="small text-body-secondary">Освещение</span
+                  ><span class="badge text-bg-light border">Новинка</span>
+                </div>
+                <h3 class="card-title h5">
+                  <a href="product-lamp.html" class="text-decoration-none"
+                    >Лампа «Купол»</a
+                  >
+                </h3>
+                <p class="card-text small text-body-secondary">
+                  Матовый металл, мягкий свет
+                </p>
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-3"
+                >
+                  <span class="fw-semibold">8 900 ₽</span
+                  ><a
+                    href="product-lamp.html"
+                    class="btn btn-outline-primary btn-sm"
+                    aria-label="Подробнее: Лампа «Купол»"
+                    >Подробнее ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card h-100 product-card">
+              <a
+                href="product-chair.html"
+                class="product-image-link"
+                tabindex="-1"
+                aria-hidden="true"
+                ><img
+                  src="images/chair.webp"
+                  class="img-fluid card-img-top product-image"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+              /></a>
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                  <span class="small text-body-secondary">Стулья</span
+                  ><span class="badge text-bg-light border">Для столовой</span>
+                </div>
+                <h3 class="card-title h5">
+                  <a href="product-chair.html" class="text-decoration-none"
+                    >Стул «Линия»</a
+                  >
+                </h3>
+                <p class="card-text small text-body-secondary">
+                  Массив дуба, бумажный шнур
+                </p>
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-3"
+                >
+                  <span class="fw-semibold">18 900 ₽</span
+                  ><a
+                    href="product-chair.html"
+                    class="btn btn-outline-primary btn-sm"
+                    aria-label="Подробнее: Стул «Линия»"
+                    >Подробнее ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container py-4 py-lg-5"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-12 col-md-5">
+            <img
+              src="images/chair.webp"
+              class="img-fluid about-image rounded-4 w-100"
+              alt="Детали стула из натурального дуба и плетёного шнура"
+              width="700"
+              height="700"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-12 col-md-7">
+            <h2 class="display-6" id="about-title">О магазине</h2>
+            <p class="text-body-secondary mt-4">
+              В каталоге четыре предмета: кресло, стул, столик и лампа. У
+              каждого есть описание, характеристики и форма заявки.
+            </p>
+
+            <button
+              class="btn btn-primary mt-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#helpModal"
+            >
+              Консультация ↗
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5" aria-labelledby="faq-title">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <h2 class="h2" id="faq-title">Частые вопросы</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="accordion" id="faq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq0"
+                    aria-expanded="false"
+                    aria-controls="faq0"
+                  >
+                    Как работает заявка?
+                  </button>
+                </h3>
+                <div
+                  id="faq0"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-body-secondary">
+                    Выберите предмет, заполните форму вымышленными данными и
+                    нажмите «Проверить заявку». Браузер проверит поля, а затем
+                    появится учебное подтверждение. Реальный заказ не создаётся.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="false"
+                    aria-controls="faq1"
+                  >
+                    Можно ли посмотреть мебель вживую?
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-body-secondary">
+                    У учебного магазина нет действующего шоурума. В концепции
+                    магазина предусмотрены консультация и посещение по
+                    предварительной договорённости.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    Как устроена доставка?
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body text-body-secondary">
+                    В концепции предусмотрены доставка по Москве и самовывоз.
+                    Адрес, стоимость и удобное время обсуждаются при оформлении.
+                    Учебная версия не организует реальную доставку.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-tertiary border-top mt-5">
+      <div class="container py-5">
+        <div class="row gy-4 align-items-start">
+          <div class="col-12 col-md-5">
+            <a class="brand text-decoration-none" href="index.html"
+              >форма<span class="brand-mark" aria-hidden="true">®</span></a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <nav aria-label="Навигация в подвале">
+              <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+                <li><a href="catalog.html">Коллекция</a></li>
+                <li><a href="order.html">Заявка</a></li>
+                <li><a href="contacts.html">Контакты и доставка</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-4">
+            <p class="small fw-semibold mb-2">Учебный проект · КР №2</p>
+            <p class="small text-body-secondary mb-0">
+              Вознесенский Владимир<br />ЭФБО-13-25
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-top mt-4 pt-4 small text-body-secondary d-flex flex-wrap justify-content-between gap-2"
+        >
+          <span>© Форма, 2026</span
+          ><span>Товары и контакты демонстрационные.</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="helpModal"
+      tabindex="-1"
+      aria-labelledby="helpModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="helpModalTitle">Консультация</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть окно"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Выберите товар и задайте вопрос в форме заявки.</p>
+            <div class="alert alert-light border small mb-0">
+              Это учебная версия магазина. Реальные заказы и платежи не
+              принимаются.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Продолжить просмотр</button
+            ><a class="btn btn-primary" href="order.html">К форме заявки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>

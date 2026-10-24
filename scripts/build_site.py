@@ -1,4 +1,4 @@
-"""Подготовка публичных файлов для GitHub Pages, без зависимостей и компиляции."""
+"""Подготовка двух независимых работ и страницы выбора в dist/."""
 from pathlib import Path
 import shutil
 
@@ -7,9 +7,15 @@ output = root / 'dist'
 if output.exists():
     shutil.rmtree(output)
 output.mkdir()
-for file in root.glob('*.html'):
-    shutil.copy2(file, output / file.name)
-for directory in ('css', 'js', 'images', 'fonts'):
-    shutil.copytree(root / directory, output / directory)
+shutil.copy2(root / 'index.html', output / 'index.html')
+for course in ('kr1', 'kr2'):
+    target = output / course
+    target.mkdir()
+    for file in (root / course).glob('*.html'):
+        shutil.copy2(file, target / file.name)
+    for directory in ('css', 'js', 'images', 'fonts', 'vendor'):
+        source = root / course / directory
+        if source.exists():
+            shutil.copytree(source, target / directory)
 (output / '.nojekyll').touch()
-print(f'Готово: {len(list(output.glob("*.html")))} страниц и локальные ресурсы в dist/')
+print(f'Готово: {len(list(output.rglob("*.html")))} страниц и локальные ресурсы обеих работ в dist/')

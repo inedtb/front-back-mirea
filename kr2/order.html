@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Форма учебной заявки: контакты, выбранный предмет, комментарий и способ получения."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Заявка на подбор мебели | Форма · КР №2</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <!-- Сначала локальный Bootstrap, затем точечные фирменные стили. -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main"
+      >Перейти к содержимому</a
+    >
+    <header class="sticky-top bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html"
+            >форма<span class="brand-mark" aria-hidden="true">®</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-lg-3 py-3 py-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Коллекция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">О магазине</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a
+              class="btn btn-primary btn-sm px-4"
+              href="order.html"
+              aria-current="page"
+              >Оставить заявку <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container">
+        <nav aria-label="Хлебные крошки" class="pt-4 pb-2">
+          <ol class="breadcrumb small">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Оставить заявку
+            </li>
+          </ol>
+        </nav>
+        <div class="py-4">
+          <h1 class="display-4">Заявка</h1>
+        </div>
+        <div class="row g-4 g-lg-5 pb-5">
+          <div class="col-12 col-lg-8">
+            <div class="alert alert-light border small" id="form-help">
+              Учебная форма: используйте вымышленные данные. Заявка не
+              отправляется в магазин. Обязательные поля отмечены звёздочкой.
+            </div>
+            <noscript
+              ><div class="alert alert-warning">
+                JavaScript отключён: после проверки браузером форма откроет
+                страницу результата. В этом режиме значения полей попадут в
+                адрес страницы; вводите только вымышленные данные.
+              </div></noscript
+            >
+            <form
+              id="order-form"
+              action="request-preview.html"
+              method="get"
+              aria-describedby="form-help"
+            >
+              <fieldset class="mb-4">
+                <legend class="h5 mb-4">Ваши контакты</legend>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="name">Имя *</label
+                    ><input
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      autocomplete="given-name"
+                      placeholder="Как к вам обращаться"
+                      required
+                      minlength="2"
+                      maxlength="60"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="email"
+                      >Электронная почта *</label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="name@example.com"
+                      required
+                      maxlength="120"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="phone">Телефон *</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="phone-prefix">+7</span
+                      ><input
+                        class="form-control"
+                        type="tel"
+                        inputmode="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel-national"
+                        placeholder="9991234567"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required
+                        aria-describedby="phone-prefix phone-help"
+                      />
+                    </div>
+                    <div class="form-text" id="phone-help">
+                      10 цифр после +7, без пробелов и скобок.
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="mb-4">
+                <legend class="h5 mb-4">Что вам понравилось</legend>
+                <div class="mb-3">
+                  <label class="form-label" for="product"
+                    >Предмет или тема заявки *</label
+                  ><select
+                    class="form-select"
+                    id="product"
+                    name="product"
+                    required
+                  >
+                    <option value="">Выберите предмет</option>
+                    <option value="lounge">Кресло «Тихо» · 32 900 ₽</option>
+                    <option value="table">Столик «Круг» · 14 900 ₽</option>
+                    <option value="lamp">Лампа «Купол» · 8 900 ₽</option>
+                    <option value="chair">Стул «Линия» · 18 900 ₽</option>
+                    <option value="consultation">Нужна помощь с выбором</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label" for="comment">Комментарий</label
+                  ><textarea
+                    class="form-control"
+                    id="comment"
+                    name="comment"
+                    rows="4"
+                    maxlength="1500"
+                    placeholder="Размеры комнаты, пожелания или ваш вопрос"
+                  ></textarea>
+                </div>
+              </fieldset>
+              <fieldset class="mb-4">
+                <legend class="h5 mb-3">Как удобнее получить</legend>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="delivery"
+                    id="courier"
+                    value="courier"
+                    checked
+                  /><label class="form-check-label" for="courier"
+                    >Доставка</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="delivery"
+                    id="pickup"
+                    value="pickup"
+                  /><label class="form-check-label" for="pickup"
+                    >Самовывоз</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="delivery"
+                    id="later"
+                    value="later"
+                  /><label class="form-check-label" for="later"
+                    >Решу позже</label
+                  >
+                </div>
+              </fieldset>
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="yes"
+                  name="consent"
+                  id="consent"
+                  required
+                /><label class="form-check-label small" for="consent"
+                  >Согласен с условиями учебной формы и обработкой введённых
+                  данных. *</label
+                >
+                <button
+                  type="button"
+                  class="btn btn-link d-block p-0 mt-1 small"
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacyModal"
+                >
+                  Прочитать условия учебной формы
+                </button>
+              </div>
+              <div class="d-flex flex-wrap align-items-center gap-3">
+                <button class="btn btn-primary px-4" type="submit">
+                  Проверить заявку ↗</button
+                ><span class="small text-body-secondary"
+                  >Без оплаты и обязательств</span
+                >
+              </div>
+            </form>
+          </div>
+          <aside class="col-12 col-lg-4">
+            <div
+              class="card border-0 bg-body-tertiary rounded-4 overflow-hidden"
+            >
+              <img
+                src="images/lounge.webp"
+                class="img-fluid card-img-top"
+                alt="Кресло и столик в солнечной комнате"
+                width="600"
+                height="400"
+              />
+              <div class="card-body p-4">
+                <h2 class="h4">Как оформить заявку</h2>
+
+                <ul class="list-group list-group-flush small">
+                  <li class="list-group-item bg-transparent px-0">
+                    01 · Выберите предмет
+                  </li>
+                  <li class="list-group-item bg-transparent px-0">
+                    02 · Заполните контакты
+                  </li>
+                  <li class="list-group-item bg-transparent px-0">
+                    03 · Проверьте учебную заявку
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="privacyModal"
+        tabindex="-1"
+        aria-labelledby="privacyTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="privacyTitle">
+                Условия учебной формы
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть условия"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Используйте вымышленные имя, телефон и e-mail. При включённом
+                JavaScript форма проверяется в браузере; сетевой отправки, базы
+                данных и сохранения введённых значений нет.
+              </p>
+              <p class="mb-0">
+                Без JavaScript выполняется переход методом GET: данные попадают
+                в URL и могут остаться в истории браузера и журналах хостинга.
+                Согласие является частью учебного макета.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Понятно
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="requestModal"
+        tabindex="-1"
+        aria-labelledby="requestTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="requestTitle">
+                Форма проверена
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть результат"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="alert alert-success" role="status">
+                Обязательные поля заполнены корректно.
+              </div>
+              <p class="fw-semibold" id="request-product"></p>
+              <p class="mb-0">
+                Это завершение учебного сценария. Заявка не отправлена, реальный
+                заказ не создан. Можно вернуться и изменить данные.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal"
+              >
+                Изменить данные</button
+              ><a class="btn btn-primary" href="catalog.html">К коллекции</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-body-tertiary border-top mt-5">
+      <div class="container py-5">
+        <div class="row gy-4 align-items-start">
+          <div class="col-12 col-md-5">
+            <a class="brand text-decoration-none" href="index.html"
+              >форма<span class="brand-mark" aria-hidden="true">®</span></a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <nav aria-label="Навигация в подвале">
+              <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+                <li><a href="catalog.html">Коллекция</a></li>
+                <li><a href="order.html">Заявка</a></li>
+                <li><a href="contacts.html">Контакты и доставка</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-4">
+            <p class="small fw-semibold mb-2">Учебный проект · КР №2</p>
+            <p class="small text-body-secondary mb-0">
+              Вознесенский Владимир<br />ЭФБО-13-25
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-top mt-4 pt-4 small text-body-secondary d-flex flex-wrap justify-content-between gap-2"
+        >
+          <span>© Форма, 2026</span
+          ><span>Товары и контакты демонстрационные.</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="helpModal"
+      tabindex="-1"
+      aria-labelledby="helpModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="helpModalTitle">Консультация</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть окно"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Выберите товар и задайте вопрос в форме заявки.</p>
+            <div class="alert alert-light border small mb-0">
+              Это учебная версия магазина. Реальные заказы и платежи не
+              принимаются.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Продолжить просмотр</button
+            ><a class="btn btn-primary" href="order.html">К форме заявки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/order.js" defer></script>
+  </body>
+</html>

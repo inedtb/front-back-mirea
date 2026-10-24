@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Демонстрационная страница результата без отправки реального заказа."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Результат учебной формы | Форма · КР №2</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <!-- Сначала локальный Bootstrap, затем точечные фирменные стили. -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main"
+      >Перейти к содержимому</a
+    >
+    <header class="sticky-top bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html"
+            >форма<span class="brand-mark" aria-hidden="true">®</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-lg-3 py-3 py-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Коллекция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">О магазине</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary btn-sm px-4" href="order.html"
+              >Оставить заявку <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container py-5">
+        <div class="row justify-content-center py-lg-5">
+          <div class="col-12 col-md-9 col-lg-7">
+            <div class="alert alert-info">Учебный сценарий без JavaScript</div>
+            <h1 class="display-5">Проверка завершена.</h1>
+            <p class="lead text-body-secondary">
+              Если вы пришли сюда из формы, браузер проверил обязательные поля.
+              Реальная заявка не отправлена, заказ не создан.
+            </p>
+            <p class="text-body-secondary">
+              В режиме без JavaScript вымышленные значения полей отображаются в
+              URL. Не используйте эту форму для реальных персональных данных.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-primary" href="catalog.html"
+                >Вернуться к коллекции</a
+              ><a class="btn btn-outline-primary" href="order.html"
+                >Заполнить снова</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-tertiary border-top mt-5">
+      <div class="container py-5">
+        <div class="row gy-4 align-items-start">
+          <div class="col-12 col-md-5">
+            <a class="brand text-decoration-none" href="index.html"
+              >форма<span class="brand-mark" aria-hidden="true">®</span></a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <nav aria-label="Навигация в подвале">
+              <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+                <li><a href="catalog.html">Коллекция</a></li>
+                <li><a href="order.html">Заявка</a></li>
+                <li><a href="contacts.html">Контакты и доставка</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-4">
+            <p class="small fw-semibold mb-2">Учебный проект · КР №2</p>
+            <p class="small text-body-secondary mb-0">
+              Вознесенский Владимир<br />ЭФБО-13-25
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-top mt-4 pt-4 small text-body-secondary d-flex flex-wrap justify-content-between gap-2"
+        >
+          <span>© Форма, 2026</span
+          ><span>Товары и контакты демонстрационные.</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="helpModal"
+      tabindex="-1"
+      aria-labelledby="helpModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="helpModalTitle">Консультация</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть окно"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Выберите товар и задайте вопрос в форме заявки.</p>
+            <div class="alert alert-light border small mb-0">
+              Это учебная версия магазина. Реальные заказы и платежи не
+              принимаются.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Продолжить просмотр</button
+            ><a class="btn btn-primary" href="order.html">К форме заявки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>

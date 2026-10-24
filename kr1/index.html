@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Форма: учебный магазин мебели и света. Кресла, столики и предметы для дома с продуманным дизайном."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>Мебель и свет | Форма</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">
+      Мебель и освещение <span aria-hidden="true">·</span>
+      <a href="delivery.html">Доставка и самовывоз ↗</a>
+    </div>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="Форма, главная"
+          >форма<span class="logo__mark" aria-hidden="true">®</span></a
+        >
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="index.html"
+                aria-current="page"
+                >Главная</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#about">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__request" href="order.html"
+          >Оставить заявку <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Мебель · Свет · Детали</p>
+          <h1 id="hero-title">Мебель<br />и свет</h1>
+          <p class="hero__description">
+            Кресла, стулья, столики и настольные лампы.
+          </p>
+          <a class="button" href="catalog.html"
+            >Открыть каталог <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero__visual">
+          <img
+            class="hero__image"
+            src="images/lounge.webp"
+            alt="Оливковое кресло «Тихо» и дубовый столик в солнечной гостиной"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+          /><a class="hero__product" href="product.html"
+            ><span
+              >Кресло «Тихо»
+              <span class="hero__product-price">32 900 ₽</span></span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="advantages container"
+        id="advantages"
+        aria-labelledby="advantages-title"
+      >
+        <h2 class="visually-hidden" id="advantages-title">Почему Форма</h2>
+        <div class="advantages__item">
+          <span class="advantages__icon" aria-hidden="true">↗</span>
+          <div>
+            <h3>Лаконичный дизайн</h3>
+            <p>Лаконичные силуэты без лишнего</p>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <span class="advantages__icon" aria-hidden="true">◎</span>
+          <div>
+            <h3>Натуральные материалы</h3>
+            <p>Дуб, текстиль и металл.</p>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <span class="advantages__icon" aria-hidden="true">↔</span>
+          <div>
+            <h3>Единая коллекция</h3>
+            <p>Мебель и свет в общей палитре.</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="popular"
+        aria-labelledby="popular-title"
+      >
+        <div class="section__heading">
+          <div>
+            <h2 id="popular-title">Популярные товары</h2>
+          </div>
+          <a class="text-link" href="catalog.html"
+            >Весь каталог <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="product-grid">
+          <article
+            class="product-card product-card--featured"
+            data-category="chairs"
+          >
+            <a
+              class="product-card__image-link"
+              href="product.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                class="product-card__image"
+                src="images/lounge.webp"
+                alt=""
+                width="700"
+                height="700"
+                loading="lazy"
+            /></a>
+            <div class="product-card__meta">
+              <span>Кресла</span
+              ><span class="product-card__badge">Выбор Форма</span>
+            </div>
+            <h3 class="product-card__title">
+              <a href="product.html">Кресло «Тихо»</a>
+            </h3>
+            <p class="product-card__description">Мягкое букле, массив дуба</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">32 900 ₽</span
+              ><a
+                class="product-card__link"
+                href="product.html"
+                aria-label="Подробнее: Кресло «Тихо»"
+                >Подробнее <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="product-card" data-category="tables">
+            <a
+              class="product-card__image-link"
+              href="product-table.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                class="product-card__image"
+                src="images/table.webp"
+                alt=""
+                width="700"
+                height="700"
+                loading="lazy"
+            /></a>
+            <div class="product-card__meta"><span>Столики</span></div>
+            <h3 class="product-card__title">
+              <a href="product-table.html">Столик «Круг»</a>
+            </h3>
+            <p class="product-card__description">
+              Натуральный дуб, матовое масло
+            </p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">14 900 ₽</span
+              ><a
+                class="product-card__link"
+                href="product-table.html"
+                aria-label="Подробнее: Столик «Круг»"
+                >Подробнее <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="product-card" data-category="lighting">
+            <a
+              class="product-card__image-link"
+              href="product-lamp.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                class="product-card__image"
+                src="images/lamp.webp"
+                alt=""
+                width="700"
+                height="700"
+                loading="lazy"
+            /></a>
+            <div class="product-card__meta">
+              <span>Свет</span><span class="product-card__badge">Новинка</span>
+            </div>
+            <h3 class="product-card__title">
+              <a href="product-lamp.html">Лампа «Купол»</a>
+            </h3>
+            <p class="product-card__description">Матовый металл, мягкий свет</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">8 900 ₽</span
+              ><a
+                class="product-card__link"
+                href="product-lamp.html"
+                aria-label="Подробнее: Лампа «Купол»"
+                >Подробнее <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="product-card" data-category="chairs">
+            <a
+              class="product-card__image-link"
+              href="product-chair.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                class="product-card__image"
+                src="images/chair.webp"
+                alt=""
+                width="700"
+                height="700"
+                loading="lazy"
+            /></a>
+            <div class="product-card__meta"><span>Стулья</span></div>
+            <h3 class="product-card__title">
+              <a href="product-chair.html">Стул «Линия»</a>
+            </h3>
+            <p class="product-card__description">
+              Массив дуба, плетёное сиденье
+            </p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">18 900 ₽</span
+              ><a
+                class="product-card__link"
+                href="product-chair.html"
+                aria-label="Подробнее: Стул «Линия»"
+                >Подробнее <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="about container" id="about" aria-labelledby="about-title">
+        <div class="about__image-wrap">
+          <img
+            src="images/chair.webp"
+            alt="Стул из светлого дуба с натуральным плетёным сиденьем"
+            class="about__image"
+            width="700"
+            height="700"
+            loading="lazy"
+          />
+        </div>
+        <div class="about__copy">
+          <h2 id="about-title">О магазине</h2>
+          <p>«Форма» — учебный каталог мебели и освещения.</p>
+
+          <a class="text-link" href="catalog.html">Каталог ↗</a>
+        </div>
+      </section>
+      <section
+        class="section container faq-section"
+        aria-labelledby="faq-title"
+      >
+        <div>
+          <h2 id="faq-title">Частые вопросы</h2>
+
+          <a class="text-link" href="order.html" data-dialog-open="consultation"
+            >Задать свой вопрос ↗</a
+          >
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Как оформить заявку?</summary>
+            <p>
+              Выберите предмет в каталоге и заполните
+              <a href="order.html">форму заявки</a>. В учебной версии отправка
+              имитируется: данные не сохраняются, покупка не оформляется.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли увидеть мебель вживую?</summary>
+            <p>
+              В концепции магазина предусмотрен шоурум. Его демонстрационные
+              контакты размещены на
+              <a href="contacts.html">странице контактов</a>. У учебного
+              магазина нет действующего шоурума.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Что нужно знать о доставке?</summary>
+            <p>
+              В концепции предусмотрены доставка по Москве и самовывоз. Условия
+              и этапы собраны на <a href="delivery.html">отдельной странице</a>.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo" href="index.html"
+              >форма<span class="logo__mark" aria-hidden="true">®</span></a
+            >
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Каталог</a
+            ><a href="delivery.html">Доставка и оплата</a
+            ><a href="contacts.html">Контакты</a
+            ><a href="order.html">Оставить заявку</a>
+          </nav>
+          <div class="site-footer__contact">
+            <a href="mailto:hello@forma.example">hello@forma.example ↗</a
+            ><span>Демонстрационные контакты</span>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p>© Форма, 2026 · Учебный интернет-магазин</p>
+          <p>Вознесенский Владимир · ЭФБО-13-25</p>
+          <a href="index.html#about">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх">↑</a>
+    <dialog class="modal" id="consultation" aria-labelledby="modal-title">
+      <div class="modal__header">
+        <span class="eyebrow">Поможем с выбором</span
+        ><button
+          class="modal__close"
+          type="button"
+          data-dialog-close
+          aria-label="Закрыть окно"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <h2 id="modal-title">Консультация</h2>
+      <p>Выберите товар и задайте вопрос в форме заявки.</p>
+      <a class="button" href="order.html"
+        >Перейти к заявке <span aria-hidden="true">↗</span></a
+      >
+      <p class="modal__note">
+        Это учебный проект. Реальные заказы не принимаются.
+      </p>
+    </dialog>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

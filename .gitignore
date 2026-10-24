@@ -11,3 +11,8 @@ __pycache__/
 *.log
 playwright-report/
 test-results/
+
+# Документация хранится только локально по запросу владельца.
+README.md
+/kr1/docs/
+/kr2/docs/

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Демонстрационные контакты учебного магазина Форма, условия доставки и ответы на вопросы."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Контакты и доставка | Форма · КР №2</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <!-- Сначала локальный Bootstrap, затем точечные фирменные стили. -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main"
+      >Перейти к содержимому</a
+    >
+    <header class="sticky-top bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html"
+            >форма<span class="brand-mark" aria-hidden="true">®</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-lg-3 py-3 py-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Коллекция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">О магазине</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <a class="btn btn-primary btn-sm px-4" href="order.html"
+              >Оставить заявку <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container">
+        <nav aria-label="Хлебные крошки" class="pt-4 pb-2">
+          <ol class="breadcrumb small">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+          </ol>
+        </nav>
+        <div class="py-4">
+          <h1 class="display-4">Контакты</h1>
+        </div>
+        <section
+          class="row g-4 g-lg-5 align-items-center pb-5"
+          aria-labelledby="contact-title"
+        >
+          <div class="col-12 col-md-6">
+            <h2 class="h3" id="contact-title">Напишите нам</h2>
+            <a
+              class="fs-4 link-primary contact-email"
+              href="mailto:hello@forma.example"
+              >hello@forma.example ↗</a
+            >
+            <div class="row g-4 my-3">
+              <div class="col-12 col-xl-6">
+                <h3 class="h6">Шоурум</h3>
+                <address class="text-body-secondary small mb-0">
+                  Москва, ул. Примерная, д. 10<br />Демонстрационный адрес
+                </address>
+              </div>
+              <div class="col-12 col-xl-6">
+                <h3 class="h6">Время работы</h3>
+                <p class="text-body-secondary small mb-0">
+                  Ежедневно, 10:00–20:00<br />Московское время
+                </p>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="order.html">Оставить заявку ↗</a>
+            <div class="alert alert-light border small mt-4 mb-0">
+              Контакты вымышлены. У учебного магазина нет действующего шоурума.
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid w-100 rounded-4 contact-image"
+              src="images/lounge.webp"
+              alt="Светлый интерьер с оливковым креслом"
+              width="800"
+              height="700"
+            />
+          </div>
+        </section>
+        <section id="delivery" class="py-4" aria-labelledby="delivery-title">
+          <h2 class="h2 mb-4" id="delivery-title">Доставка</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <article class="card h-100 bg-body-tertiary border-0">
+                <div class="card-body p-4">
+                  <h3 class="h5">Доставка по Москве</h3>
+                  <p class="text-body-secondary mb-0">
+                    В концепции магазина стоимость и время согласовываются после
+                    заявки. Подъём, габариты лифта и удобный интервал
+                    обсуждаются заранее.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6">
+              <article class="card h-100 bg-body-tertiary border-0">
+                <div class="card-body p-4">
+                  <h3 class="h5">Самовывоз</h3>
+                  <p class="text-body-secondary mb-0">
+                    Предполагает согласование готовности предмета и времени
+                    визита. Для перевозки крупной мебели нужен подходящий
+                    транспорт.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <p class="small text-body-secondary mt-3">
+            Условия демонстрационные. Действующей доставки и оплаты нет.
+          </p>
+        </section>
+        <section class="py-5" aria-labelledby="contact-faq">
+          <h2 class="h2 mb-4" id="contact-faq">Частые вопросы</h2>
+          <div class="accordion" id="contactFaq">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaq0"
+                  aria-expanded="false"
+                  aria-controls="contactFaq0"
+                >
+                  Как работает заявка?
+                </button>
+              </h3>
+              <div
+                id="contactFaq0"
+                class="accordion-collapse collapse"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body text-body-secondary">
+                  Выберите предмет, заполните форму вымышленными данными и
+                  нажмите «Проверить заявку». Браузер проверит поля, а затем
+                  появится учебное подтверждение. Реальный заказ не создаётся.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaq1"
+                  aria-expanded="false"
+                  aria-controls="contactFaq1"
+                >
+                  Можно ли посмотреть мебель вживую?
+                </button>
+              </h3>
+              <div
+                id="contactFaq1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body text-body-secondary">
+                  У учебного магазина нет действующего шоурума. В концепции
+                  магазина предусмотрены консультация и посещение по
+                  предварительной договорённости.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#contactFaq2"
+                  aria-expanded="false"
+                  aria-controls="contactFaq2"
+                >
+                  Как устроена доставка?
+                </button>
+              </h3>
+              <div
+                id="contactFaq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#contactFaq"
+              >
+                <div class="accordion-body text-body-secondary">
+                  В концепции предусмотрены доставка по Москве и самовывоз.
+                  Адрес, стоимость и удобное время обсуждаются при оформлении.
+                  Учебная версия не организует реальную доставку.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-body-tertiary border-top mt-5">
+      <div class="container py-5">
+        <div class="row gy-4 align-items-start">
+          <div class="col-12 col-md-5">
+            <a class="brand text-decoration-none" href="index.html"
+              >форма<span class="brand-mark" aria-hidden="true">®</span></a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <nav aria-label="Навигация в подвале">
+              <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+                <li><a href="catalog.html">Коллекция</a></li>
+                <li><a href="order.html">Заявка</a></li>
+                <li><a href="contacts.html">Контакты и доставка</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 col-md-4">
+            <p class="small fw-semibold mb-2">Учебный проект · КР №2</p>
+            <p class="small text-body-secondary mb-0">
+              Вознесенский Владимир<br />ЭФБО-13-25
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-top mt-4 pt-4 small text-body-secondary d-flex flex-wrap justify-content-between gap-2"
+        >
+          <span>© Форма, 2026</span
+          ><span>Товары и контакты демонстрационные.</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="helpModal"
+      tabindex="-1"
+      aria-labelledby="helpModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="helpModalTitle">Консультация</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть окно"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Выберите товар и задайте вопрос в форме заявки.</p>
+            <div class="alert alert-light border small mb-0">
+              Это учебная версия магазина. Реальные заказы и платежи не
+              принимаются.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Продолжить просмотр</button
+            ><a class="btn btn-primary" href="order.html">К форме заявки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>

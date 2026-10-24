@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Демонстрационные условия доставки, самовывоза и оформления заявки в магазине Форма."
+      content="Демонстрационные контакты магазина Форма и форма заявки на подбор мебели."
     />
     <meta name="theme-color" content="#f7f8f5" />
-    <title>Доставка и оплата | Форма</title>
+    <title>Контакты | Форма</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
     <div class="announcement">
-      Продуманные вещи для вашего дома <span aria-hidden="true">·</span>
+      Мебель и освещение <span aria-hidden="true">·</span>
       <a href="delivery.html">Доставка и самовывоз ↗</a>
     </div>
     <header class="site-header" id="top">
@@ -35,15 +35,15 @@
               <a class="site-nav__link" href="index.html#about">О нас</a>
             </li>
             <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="delivery.html"
-                aria-current="page"
-                >Доставка</a
-              >
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="contacts.html">Контакты</a>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="contacts.html"
+                aria-current="page"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -57,54 +57,79 @@
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
           <ol>
             <li><a href="index.html">Главная</a></li>
-            <li aria-current="page">Доставка и оплата</li>
+            <li aria-current="page">Контакты</li>
           </ol>
         </nav>
         <div class="page-heading">
-          <p class="eyebrow">От выбора до вашего дома</p>
-          <h1>Всё на своих местах.</h1>
-          <p>Понятные условия, чтобы планировать было проще.</p>
+          <h1>Контакты</h1>
         </div>
-        <section class="delivery-grid" aria-labelledby="delivery-title">
-          <h2 class="visually-hidden" id="delivery-title">Способы получения</h2>
-          <article class="info-panel">
-            <span class="info-panel__number">01</span>
-            <h2>Доставка по Москве</h2>
-            <p>
-              В концепции магазина день и время доставки согласовываются после
-              заявки. Стоимость зависит от адреса и габаритов предмета.
+        <section class="contact-layout" aria-labelledby="contact-title">
+          <div class="contact-layout__info">
+            <h2 id="contact-title">Напишите нам</h2>
+            <a class="contact-email" href="mailto:hello@forma.example"
+              >hello@forma.example ↗</a
+            >
+            <p>Вопросы о коллекции и помощь с выбором.</p>
+            <div class="contact-details">
+              <div>
+                <h3>Шоурум</h3>
+                <address>
+                  Москва, ул. Примерная, д. 10<br />Демонстрационный адрес
+                </address>
+              </div>
+              <div>
+                <h3>Время работы</h3>
+                <p>Ежедневно, 10:00–20:00<br />По московскому времени</p>
+              </div>
+            </div>
+            <a class="button" href="order.html">Оставить заявку ↗</a>
+            <p class="form-note">
+              «Форма» является учебным проектом. Адрес и почта вымышлены;
+              действующего магазина нет.
             </p>
-            <ul>
-              <li>Доставка до подъезда или с подъёмом</li>
-              <li>Уточнение доступа к лифту заранее</li>
-              <li>Осмотр упаковки при получении</li>
-            </ul>
-          </article>
-          <article class="info-panel">
-            <span class="info-panel__number">02</span>
-            <h2>Самовывоз</h2>
-            <p>
-              Предполагает согласование готовности заказа и времени визита. Для
-              крупного предмета понадобится подходящий транспорт.
-            </p>
-            <ul>
-              <li>По предварительной договорённости</li>
-              <li>Проверка комплектации на месте</li>
-              <li>Рекомендации по перевозке</li>
-            </ul>
-          </article>
+          </div>
+          <img
+            class="contact-layout__image"
+            src="images/lounge.webp"
+            alt="Светлый интерьер с креслом и круглым дубовым столиком"
+            width="900"
+            height="800"
+          />
         </section>
         <section
-          class="delivery-payment section"
-          aria-labelledby="payment-title"
+          class="section faq-section"
+          aria-labelledby="contact-faq-title"
         >
-          <h2 id="payment-title">Сначала детали, потом решение</h2>
-          <p>
-            Заявка нужна для обсуждения выбора. В учебной версии нет оплаты,
-            реальной доставки или бронирования. Все товары, цены и условия
-            представлены как пример.
-          </p>
-          <a class="button" href="order.html">Перейти к заявке ↗</a>
+          <div>
+            <h2 id="contact-faq-title">Частые вопросы</h2>
+          </div>
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Как оформить заявку?</summary>
+              <p>
+                Выберите предмет в каталоге и заполните
+                <a href="order.html">форму заявки</a>. В учебной версии отправка
+                имитируется: данные не сохраняются, покупка не оформляется.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Можно ли увидеть мебель вживую?</summary>
+              <p>
+                В концепции магазина предусмотрен шоурум. Его демонстрационные
+                контакты размещены на
+                <a href="contacts.html">странице контактов</a>. У учебного
+                магазина нет действующего шоурума.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Что нужно знать о доставке?</summary>
+              <p>
+                В концепции предусмотрены доставка по Москве и самовывоз.
+                Условия и этапы собраны на
+                <a href="delivery.html">отдельной странице</a>.
+              </p>
+            </details>
+          </div>
         </section>
       </div>
     </main>
@@ -115,7 +140,6 @@
             <a class="logo" href="index.html"
               >форма<span class="logo__mark" aria-hidden="true">®</span></a
             >
-            <p>Вещи, с которыми хорошо дома.</p>
           </div>
           <nav aria-label="Навигация в подвале">
             <a href="catalog.html">Каталог</a
@@ -149,11 +173,8 @@
           ×
         </button>
       </div>
-      <h2 id="modal-title">Найдём вашу форму.</h2>
-      <p>
-        Расскажите о комнате, любимых материалах и бюджете. В форме заявки можно
-        выбрать предмет и задать вопрос.
-      </p>
+      <h2 id="modal-title">Консультация</h2>
+      <p>Выберите товар и задайте вопрос в форме заявки.</p>
       <a class="button" href="order.html"
         >Перейти к заявке <span aria-hidden="true">↗</span></a
       >

@@ -1,0 +1,292 @@
+/* КР №2: только фирменные дополнения поверх Bootstrap 5.3.8.
+   Сетка, отступы и интерактивные компоненты принадлежат Bootstrap. */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-latin.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-cyrillic.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+:root,
+[data-bs-theme="light"] {
+  --bs-body-font-family: "Manrope", Arial, sans-serif;
+  --bs-body-color: #24372c;
+  --bs-secondary-color: #606960;
+  --bs-primary: #355d46;
+  --bs-primary-rgb: 53, 93, 70;
+  --bs-success-rgb: 53, 93, 70;
+  --bs-link-color: #355d46;
+  --bs-link-color-rgb: 53, 93, 70;
+  --bs-link-hover-color: #244432;
+  --bs-link-hover-color-rgb: 36, 68, 50;
+  --bs-tertiary-bg: #f2f5ef;
+  --bs-border-color: #dce2d8;
+  --bs-border-radius: 0.65rem;
+  --bs-border-radius-lg: 1rem;
+  --bs-border-radius-xl: 1.4rem;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 105px;
+}
+body {
+  line-height: 1.75;
+}
+h1,
+h2,
+h3,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+.display-3 {
+  font-weight: 500;
+}
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 500;
+}
+a {
+  text-underline-offset: 0.2em;
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 3px solid #355d46;
+  outline-offset: 4px;
+}
+.brand {
+  font-size: 2.3rem;
+  letter-spacing: -0.085em;
+  font-weight: 800;
+  color: #24372c;
+  line-height: 1.1;
+}
+.brand-mark {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.65rem;
+  letter-spacing: 0;
+  margin: 0.2rem 0 0 0.25rem;
+}
+.navbar {
+  --bs-navbar-color: #606960;
+  --bs-navbar-active-color: #355d46;
+  --bs-navbar-hover-color: #244432;
+}
+.navbar .nav-link {
+  font-size: 0.85rem;
+}
+.navbar .nav-link.active {
+  font-weight: 700;
+}
+.btn {
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-padding-x: 1.25rem;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 600;
+}
+.btn-sm {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 0.85rem;
+  --bs-btn-font-size: 0.75rem;
+}
+.btn-primary {
+  --bs-btn-bg: #355d46;
+  --bs-btn-border-color: #355d46;
+  --bs-btn-hover-bg: #244432;
+  --bs-btn-hover-border-color: #244432;
+  --bs-btn-active-bg: #244432;
+  --bs-btn-active-border-color: #244432;
+  --bs-btn-disabled-bg: #355d46;
+  --bs-btn-disabled-border-color: #355d46;
+  --bs-btn-focus-shadow-rgb: 53, 93, 70;
+}
+.btn-outline-primary {
+  --bs-btn-color: #355d46;
+  --bs-btn-border-color: #355d46;
+  --bs-btn-hover-bg: #355d46;
+  --bs-btn-hover-border-color: #355d46;
+  --bs-btn-active-bg: #244432;
+  --bs-btn-active-border-color: #244432;
+  --bs-btn-focus-shadow-rgb: 53, 93, 70;
+}
+.btn-link {
+  --bs-btn-color: #355d46;
+  --bs-btn-hover-color: #244432;
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1100;
+  background: #fff;
+  padding: 0.75rem;
+}
+.hero-copy {
+  background: #edf2e9;
+}
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 4.4vw, 4.3rem);
+}
+.letter-spaced {
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+}
+.hero-image {
+  height: 450px;
+  object-fit: cover;
+  object-position: 60% center;
+}
+.product-card {
+  --bs-card-border-color: #dce2d8;
+  --bs-card-border-radius: 1rem;
+  overflow: hidden;
+}
+.product-image-link {
+  display: block;
+  overflow: hidden;
+}
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.03;
+  object-fit: cover;
+  object-position: 60% center;
+  transition: transform 180ms ease-out;
+}
+.product-card .card-title {
+  font-size: 1.1rem;
+}
+.product-card .card-text {
+  font-size: 0.75rem;
+}
+.product-card .badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.about-image {
+  height: 410px;
+  object-fit: cover;
+}
+.detail-image {
+  max-height: 600px;
+  aspect-ratio: 1.15 / 1;
+  object-fit: cover;
+  object-position: 60% center;
+}
+.contact-image {
+  height: 410px;
+  object-fit: cover;
+  object-position: 60% center;
+}
+.contact-email {
+  overflow-wrap: anywhere;
+}
+.accordion {
+  --bs-accordion-active-color: #244432;
+  --bs-accordion-active-bg: #edf2e9;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(53 93 70 / 0.2);
+}
+.accordion-button {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.accordion-body {
+  font-size: 0.875rem;
+}
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #355d46;
+}
+.nav-pills .nav-link {
+  font-size: 0.875rem;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #355d46;
+  box-shadow: 0 0 0 0.25rem rgb(53 93 70 / 0.18);
+}
+.form-check-input:checked {
+  background-color: #355d46;
+  border-color: #355d46;
+}
+.form-check-input:focus {
+  border-color: #355d46;
+  box-shadow: 0 0 0 0.25rem rgb(53 93 70 / 0.18);
+}
+.form-label,
+.form-check-label {
+  font-size: 0.875rem;
+}
+.form-check-label .btn-link {
+  font: inherit;
+}
+.table {
+  --bs-table-striped-bg: #f2f5ef;
+  --bs-table-color: #24372c;
+  font-size: 0.875rem;
+}
+.table th,
+.table td {
+  padding: 1rem;
+}
+.table th[scope="row"] {
+  width: 42%;
+}
+@media (hover: hover) {
+  .product-image-link:hover .product-image {
+    transform: scale(1.025);
+  }
+}
+@media (max-width: 991.98px) {
+  .hero-image {
+    height: auto;
+    aspect-ratio: 1.5 / 1;
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.7rem, 7vw, 4.3rem);
+  }
+  .navbar-collapse {
+    max-height: 75dvh;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-image,
+  .detail-image {
+    aspect-ratio: 1.1 / 1;
+  }
+  .about-image,
+  .contact-image {
+    height: 330px;
+  }
+  .form-control,
+  .form-select {
+    font-size: 1rem;
+  }
+  .table th,
+  .table td {
+    padding: 0.75rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .product-image {
+    transition: none;
+  }
+}

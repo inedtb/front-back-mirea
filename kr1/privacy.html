@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Страница завершения проверки демонстрационной формы. Реальная заявка не отправляется."
+      content="Как работает демонстрационная форма учебного HTML/CSS-проекта Форма."
     />
     <meta name="theme-color" content="#f7f8f5" />
-    <title>Проверка учебной заявки | Форма</title>
+    <title>Условия учебной формы | Форма</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
     <div class="announcement">
-      Продуманные вещи для вашего дома <span aria-hidden="true">·</span>
+      Мебель и освещение <span aria-hidden="true">·</span>
       <a href="delivery.html">Доставка и самовывоз ↗</a>
     </div>
     <header class="site-header" id="top">
@@ -48,24 +48,37 @@
       </div>
     </header>
     <main id="main">
-      <section class="container result" aria-labelledby="result-title">
-        <span class="result__symbol" aria-hidden="true">✓</span>
-        <p class="eyebrow">Учебный сценарий</p>
-        <h1 id="result-title">Форма заполнена.</h1>
+      <div class="container prose">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Условия учебной формы</li>
+          </ol>
+        </nav>
+        <h1>О данных в форме</h1>
         <p>
-          Если вы перешли сюда кнопкой «Проверить заявку», браузер проверил
-          обязательные поля. Это демонстрация: заявка не отправлена, заказ не
-          создан.
+          «Форма» создана для контрольной работы №1 по дисциплине «Фронтенд и
+          бэкенд разработка».
         </p>
+        <h2>Используйте вымышленные данные</h2>
         <p>
-          В реальном магазине на этом шаге появилась бы информация о принятой
-          заявке.
+          Форма демонстрирует HTML-поля и встроенную проверку браузера. После
+          нажатия «Проверить заявку» откроется страница результата. Заказ не
+          создаётся, письмо не отправляется, базы данных нет.
         </p>
-        <div class="result__actions">
-          <a class="button" href="catalog.html">Вернуться к коллекции ↗</a
-          ><a class="text-link" href="order.html">Заполнить ещё раз</a>
-        </div>
-      </section>
+        <h2>Что происходит при переходе</h2>
+        <p>
+          Форма использует метод GET. Значения полей попадают в адрес страницы
+          результата и могут остаться в истории браузера и журналах хостинга. Не
+          вводите реальные имя, телефон, почту или другие персональные данные.
+        </p>
+        <h2>Учебное согласие</h2>
+        <p>
+          Флажок согласия демонстрирует обязательный элемент формы. Он не
+          заменяет политику обработки персональных данных действующего магазина.
+        </p>
+        <a class="button" href="order.html">Вернуться к форме ↗</a>
+      </div>
     </main>
     <footer class="site-footer" id="contacts">
       <div class="container">
@@ -74,7 +87,6 @@
             <a class="logo" href="index.html"
               >форма<span class="logo__mark" aria-hidden="true">®</span></a
             >
-            <p>Вещи, с которыми хорошо дома.</p>
           </div>
           <nav aria-label="Навигация в подвале">
             <a href="catalog.html">Каталог</a
@@ -108,11 +120,8 @@
           ×
         </button>
       </div>
-      <h2 id="modal-title">Найдём вашу форму.</h2>
-      <p>
-        Расскажите о комнате, любимых материалах и бюджете. В форме заявки можно
-        выбрать предмет и задать вопрос.
-      </p>
+      <h2 id="modal-title">Консультация</h2>
+      <p>Выберите товар и задайте вопрос в форме заявки.</p>
       <a class="button" href="order.html"
         >Перейти к заявке <span aria-hidden="true">↗</span></a
       >
